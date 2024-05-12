@@ -3,15 +3,13 @@
     public class Booking
     {
         public User User { get; set; }
-        public DateTime From { get; set; }
-        public DateTime To { get; set; }
+        public TimeInterval TimeInterval { get; set; }
 
-        public Booking(User user, DateTime from, DateTime to)
+
+        public Booking(User user, TimeInterval timeInterval)
         {
             User = user;
-            From = from;
-            To = to;
+            TimeInterval = timeInterval;
         }
-
     }
 }
