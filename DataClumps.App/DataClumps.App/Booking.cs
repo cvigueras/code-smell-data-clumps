@@ -2,21 +2,16 @@
 {
     public class Booking
     {
-        public Booking(string name, string dni, int age, string drivingLicence, DateTime from, DateTime to)
+        public User User { get; set; }
+        public DateTime From { get; set; }
+        public DateTime To { get; set; }
+
+        public Booking(User user, DateTime from, DateTime to)
         {
-            Name = name;
-            DNI = dni;
-            Age = age;
-            DrivingLicence = drivingLicence;
+            User = user;
             From = from;
             To = to;
         }
 
-        public string Name { get; set; }
-        public string DNI { get; set; }
-        public int Age { get; set; }
-        public string DrivingLicence { get; set; }
-        public DateTime From { get; set; }
-        public DateTime To { get; set; }
     }
 }
